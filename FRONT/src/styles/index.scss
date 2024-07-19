@@ -1,0 +1,17 @@
+@use'./reset.css';
+@use'./global';
+@use'./font';
+@use'../components/Header/header.scss';
+@use'../components/Search/search.scss';
+@use'../components/MySpace/myspace.scss';
+@use'../components/Footer/footer.scss';
+@use'../pages/Trees/trees.scss';
+@use'../pages/Campains/campains.scss';
+@use '../components/Button/button.scss';
+@use '../components/Description/description.scss';
+@use '../pages/Home/home.scss';
+@use '../pages/APropos/apropos.scss';
+@use '../pages/Tree/tree.scss';
+@use '../pages/Campain/campain.scss';
+@use '../pages/Login/login.scss';
+@use '../pages/Payment/payment.scss';

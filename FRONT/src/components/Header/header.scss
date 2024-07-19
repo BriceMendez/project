@@ -1,0 +1,76 @@
+@use '../../styles/vars' as vars;
+@use '../../styles/mixins';
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: vars.$blue-gradient-nature;
+    opacity: 70%;
+
+    @include mixins.small {
+
+        .menu_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+            align-items: flex-start;
+        }
+
+        .container-search-myspace {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: auto;
+        }
+
+        img {
+            width: auto;
+        }
+    }
+
+    a {
+        color: #0c0e0e;
+        font-size: 3rem;
+    }
+}
+
+.menu_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+
+    .menu_list-item {
+        margin: 1rem;
+        padding: 1rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.logo {
+    margin: 0.5rem;
+    width: 25%;
+    border: solid green 10px;
+    border-radius: 80px;
+}
+
+.container-search-myspace {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
