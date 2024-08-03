@@ -14,11 +14,11 @@ const app = express();
 const stripeInstance = new Stripe('sk_test_51PM77gHRY0RGHhfcuMQermEM6MJB2UklTup1slR0PWHw5XylnxZvtTiY5IL4i4EVDm8HeUSSKp4kKewFpjHfg8jf007ZkdH3IE');
 
 // Configurer CORS
-const corsOptions = {
-    origin: process.env.URL_FRONT,
-    credentials: true,
-    optionsSuccessStatus: 200
+const corsOptions = { 
+    origin: 'http://localhost:1234',
+    optionsSuccessStatus: 200 // For legacy browser support
 };
+
 app.use(cors(corsOptions));
 
 app.use(express.json());

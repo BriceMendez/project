@@ -6,7 +6,7 @@ function Campains() {
 
     const getCampains = async () => {
         try {
-            const response = await fetch(`${process.env.URL_API}campain`);
+            const response = await fetch(`http://localhost:3000/campain`);
             const data = await response.json();
             setCampains(data);
             console.log(data);
